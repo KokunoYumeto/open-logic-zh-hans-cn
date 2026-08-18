@@ -1,0 +1,175 @@
+{
+  "schema": "openlogic-zh-hans-cn-complete-qa/v1",
+  "frozen_at": "2026-08-18T04:20:55+02:00",
+  "identity": {
+    "title_zh": "《开放逻辑文本》完整版本",
+    "source_title": "The Open Logic Text",
+    "locale": "zh-Hans-CN",
+    "register": "mainland-oriented Simplified Chinese",
+    "translation_status": "AI-produced; human Chinese review not performed",
+    "certification": "not claimed",
+    "endorsement": "no upstream-author or institutional endorsement claimed"
+  },
+  "authority": {
+    "repository": "https://github.com/OpenLogicProject/OpenLogic",
+    "commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+    "license": "CC BY 4.0",
+    "manifest": "logic/UNITS.jsonl",
+    "manifest_bytes": 312352,
+    "manifest_sha256": "3DCABE67BC468766A259EB320E9A63EBB8DF2AFB2AF201B3351F231149611CC7"
+  },
+  "coverage": {
+    "manifest_units": 722,
+    "translated_units": 722,
+    "pending_units": 0,
+    "rendered_in_complete_pdf": 642,
+    "translated_but_not_selected_by_upstream_complete_driver": 80,
+    "source_bytes_sum": 3051826,
+    "target_bytes_sum": 2848850,
+    "source_files_missing": 0,
+    "source_hash_mismatches": 0,
+    "target_files_missing": 0,
+    "target_hash_mismatches": 0,
+    "placeholder_hits": 0
+  },
+  "editable_sources": {
+    "driver": {
+      "path": "logic/work/locale/zh/open-logic-complete.tex",
+      "bytes": 2452,
+      "sha256": "E47166E4D834F3B09C018A2DBB8EA828303DAD5EB5BC7BC8FE7741F7D9F7277C"
+    },
+    "locale": {
+      "path": "logic/work/locale/zh/open-logic-locale.sty",
+      "bytes": 4809,
+      "sha256": "EBA844E2397108A218CACA2DA9CCE51C1898706B9984C20974A09967179AA3D6"
+    }
+  },
+  "build": {
+    "engine": "MiKTeX XeLaTeX 26.5",
+    "final_incremental_pass_exit": 0,
+    "pages": 873,
+    "clean_recipe": [
+      "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex",
+      "bibtex <build>/open-logic-complete",
+      "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex",
+      "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex"
+    ],
+    "working_directory": "logic/work/locale/zh",
+    "log_counts": {
+      "latex_errors": 0,
+      "emergency_stops": 0,
+      "fatal_errors": 0,
+      "undefined_control_sequences": 0,
+      "undefined_reference_summaries": 0,
+      "undefined_reference_occurrences": 0,
+      "undefined_citation_occurrences": 0,
+      "missing_character_warnings": 0,
+      "rerun_requests": 0,
+      "multiply_defined_labels": 0,
+      "overfull_hboxes": 64,
+      "underfull_hboxes": 17,
+      "maximum_overfull_points": 63.604,
+      "overfull_boxes_above_25_points": 6
+    },
+    "bibtex_warnings": [
+      "missing publisher in Berkeley1734",
+      "cannot use both author and editor fields in Frege1953",
+      "cannot use both author and editor fields in EwaldSieg2013",
+      "missing publisher in Hume1740",
+      "empty journal in OConnorRobertson:RN",
+      "empty journal in Weston2003"
+    ]
+  },
+  "artifacts": {
+    "pdf": {
+      "path": "logic/build/zh/complete-1/open-logic-complete.pdf",
+      "bytes": 3919880,
+      "sha256": "CEDE048997A9061E8F64EBBE82D49C8BAF8B631B9A13E1CA98B5F85C4ABF9878"
+    },
+    "log": {
+      "path": "logic/build/zh/complete-1/open-logic-complete.log",
+      "bytes": 1088798,
+      "sha256": "BBC8EBB788AF0218E52DE2248DA3B9D9B1E34E73321FEAA669629571DE6EFFED"
+    },
+    "aux": {
+      "bytes": 961674,
+      "sha256": "C7738A5A04B92CE1CFA1D0FEC31AA93A592B7D710FEAF586A8E142C3AD16DE9F"
+    },
+    "bbl": {
+      "bytes": 28387,
+      "sha256": "E0E5C2FEF8B98890CC22D88ADE91D062364C804381328FE3964AC93D41668CFA"
+    },
+    "blg": {
+      "bytes": 1548,
+      "sha256": "6520AD3687129915A9F0F7297B68FE2AFB9DE77987976C4104BDBC6B431E4ADF"
+    },
+    "fls": {
+      "bytes": 411044,
+      "sha256": "83AC54EB133D91472C236633101CE95D864D3755F209998291960FC51EB3DB69"
+    },
+    "out": {
+      "bytes": 78192,
+      "sha256": "0C391FD4DCB7AD6FBD3952A4ADB8686C25FFE1687875562973F5956C4B94D9C7"
+    },
+    "prb": {
+      "bytes": 50,
+      "sha256": "585E6B3E453D29EF43B6481679296811117570A81FB8854EF5A41B4A4338B0E9"
+    },
+    "thm": {
+      "bytes": 169282,
+      "sha256": "3CFB1E910DE0B4D67A4CD6064599DB890357BD2F9E9740697E4029C98E437EEF"
+    },
+    "toc": {
+      "bytes": 65064,
+      "sha256": "6F0FC717C8F2F012F6A1E14C2AAE8CCD7BB0FAE4326456642A8FFFB048404258"
+    }
+  },
+  "extraction": {
+    "method": "MiKTeX pdftotext -layout -enc UTF-8",
+    "temporary_text_bytes": 2162384,
+    "temporary_text_sha256": "B2A3B31FD82AC6ED9B5ABA2D71FE6D8B71CF8CE664BD00A5DD78B435781C1C13",
+    "cjk_characters": 361275,
+    "replacement_characters": 0,
+    "double_question_mark_pairs": 0,
+    "required_identity_strings_present": [
+      "大陆简体中文",
+      "zh-Hans-CN",
+      "目录",
+      "参考文献",
+      "9620cc73f9c8"
+    ]
+  },
+  "fonts_and_accessibility": {
+    "font_rows": 40,
+    "embedded_rows": 40,
+    "subset_rows": 37,
+    "tounicode_rows": 33,
+    "rows_without_tounicode": 7,
+    "tagged_pdf": false,
+    "adverse_evidence": "The visible edition is sound at producer QA scope, but the PDF has no document tagging and seven mathematical or Type 3 font rows lack ToUnicode. Formula copy/search/extraction and screen-reader structure are therefore not certified. This is retained as an upstream toolchain candidate, not treated as a Chinese prose defect."
+  },
+  "visual_qa": {
+    "method": "Poppler rasterization followed by producer visual inspection",
+    "pages_inspected": [1, 52, 461, 462, 463, 464, 530, 531, 532, 535, 536, 537, 867, 873],
+    "severe_overfull_pages": [461, 463, 530, 531, 532, 536],
+    "result": "No observed clipping, overlap, missing glyph, broken formula, footer collision, or unreadable content. The six large overfull warnings remain visually contained inside the physical page. Chinese title, chapter order, running headings, bibliography heading, page numbers, and mainland commit footer were checked."
+  },
+  "ledgers": {
+    "changes_rows": 733,
+    "changes_sha256": "7D986C4DBB82FFDE0550BF9EC6A9D22E3630DEA70C488CDF42AB44F57F643248",
+    "terminology_rows": 532,
+    "terminology_sha256": "B66646D85806B168818F8189F0865F4EF2A82E5CC6E1C4B1315D38DC2F1993F8",
+    "cjk_register_rows": 107,
+    "cjk_register_sha256": "C8A391C4E1D279366F5FC7F53D6687F0B09F335CB362E26B22D81752B8846399",
+    "upstream_candidate_rows": 4,
+    "upstream_candidates_sha256": "D5582C893714D9180076EF788B1F83A668EFBD53C4AA5A0F610DE84BE3C41C49",
+    "json_parse_errors": 0
+  },
+  "release_disposition": {
+    "producer_packet_ready": true,
+    "independent_chinese_check": "pending",
+    "independent_rendered_page_check": "pending",
+    "upstream_issue_posted": false,
+    "upstream_issue_permission": "Ask Floris immediately before opening or posting the consolidated issue; this gate does not apply to publication of the Chinese edition."
+  }
+}
