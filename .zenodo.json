@@ -1,0 +1,42 @@
+{
+  "title": "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版（zh-Hans-CN，722/722）",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "Open Logic Project 锁定来源树全部 722 个内容 TeX 单元的大陆简体中文（zh-Hans-CN）完整翻译；含 873 页可检索 PDF、完整可编辑来源、构建材料、术语与变更记录及 QA/provenance。AI 生产，尚未经人工中文审校，不声称官方认可或 PDF/UA 认证。",
+  "creators": [
+    {
+      "name": "Open Logic Project"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "AI typesetting & translation",
+      "type": "Other"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "language": "zho",
+  "version": "2026-08-18 — 完整大陆简体中文译本，722/722",
+  "keywords": [
+    "开放逻辑项目",
+    "简体中文",
+    "zh-Hans-CN",
+    "数理逻辑",
+    "证明论",
+    "开放教材",
+    "CC BY 4.0"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/KokunoYumeto/open-logic-zh-hans-cn",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
