@@ -1,27 +1,21 @@
 cff-version: 1.2.0
-message: "请按下列元数据引用这个完整大陆简体中文版本。"
-title: "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版"
+message: "引用本译本时，请同时注明 Open Logic Project 原作、锁定提交和本版本 DOI。"
+title: "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版（zh-Hans-CN，722/722）"
 type: book
+version: "2026-08-18-reflow-10.5pt"
+date-released: 2026-08-18
 authors:
   - name: "Open Logic Project"
-version: "2026-08-18 — 完整大陆简体中文译本，722/722"
-date-released: 2026-08-18
-license: CC-BY-4.0
+translators:
+  - name: "AI typesetting & translation"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21987817
+    description: "Concept DOI; resolves to the newest published version"
 repository-code: "https://github.com/KokunoYumeto/open-logic-zh-hans-cn"
-doi: 10.5281/zenodo.21987818
-url: https://doi.org/10.5281/zenodo.21987818
+url: "https://doi.org/10.5281/zenodo.21987817"
+license: CC-BY-4.0
 abstract: >-
-  Open Logic Project 锁定来源树全部 722 个来源对应内容 TeX 单元的
-  大陆简体中文（zh-Hans-CN）完整翻译，含 873 页可检索阅读器。
-keywords:
-  - 简体中文
-  - zh-Hans-CN
-  - Open Logic Project
-  - mathematical logic
-  - proof theory
-  - open textbook
-references:
-  - type: software
-    title: "Open Logic Project source authority"
-    repository-code: "https://github.com/OpenLogicProject/OpenLogic"
-    version: "commit 9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
+  Open Logic Project 锁定提交 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
+  全部 722 个内容 TeX 单元的大陆简体中文完整翻译；本版本采用五号宋体
+  10.5 pt / 15.5 pt 重排。AI 生产，尚未经人工中文审校。
