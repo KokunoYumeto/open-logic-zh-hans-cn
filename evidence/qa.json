@@ -1,6 +1,7 @@
 {
-  "schema": "openlogic-zh-hans-cn-complete-qa/v1",
-  "frozen_at": "2026-08-18T04:20:55+02:00",
+  "schema": "openlogic-zh-hans-cn-reflow-qa/v2",
+  "frozen_at": "2026-08-18T16:45:44+02:00",
+  "release_id": "ZH-OLP-PUB-0002",
   "identity": {
     "title_zh": "《开放逻辑文本》完整版本",
     "source_title": "The Open Logic Text",
@@ -32,11 +33,53 @@
     "target_hash_mismatches": 0,
     "placeholder_hits": 0
   },
+  "typography_evidence": {
+    "reason": "The first public reader was visibly compact and measured below the evidenced mainland scientific baseline.",
+    "primary_mainland_guidance": [
+      {
+        "publisher": "Higher Education Press / Chinese Journal of Engineering Science",
+        "url": "https://academic.hep.com.cn/CN/column11/column23257.shtml",
+        "finding": "正文一般使用宋体五号；五号 corresponds to 10.5 pt."
+      },
+      {
+        "publisher": "Science China Press / SCIENGINE",
+        "url": "https://www.sciengine.com/authorCenter/guide/Manuscript/650a3e0dc8604525a7d65f2aae61420d",
+        "finding": "Chinese body text uses Song; English body text uses Times New Roman."
+      }
+    ],
+    "previous_reader": {
+      "pdf_sha256": "CEDE048997A9061E8F64EBBE82D49C8BAF8B631B9A13E1CA98B5F85C4ABF9878",
+      "pages": 873,
+      "dominant_rendered_cjk_points": 9.96,
+      "effective_leading_points": 12.6
+    },
+    "reflowed_reader": {
+      "declared_body_points": 10.5,
+      "dominant_rendered_cjk_points": 10.46,
+      "font": "SimSun",
+      "declared_leading_points": 15.5,
+      "measured_median_leading_points": 15.44,
+      "han_characters_per_body_line_median": 18,
+      "han_characters_per_body_line_p95": 30,
+      "han_characters_per_body_line_maximum": 32,
+      "body_lines_per_page_median": 21,
+      "body_lines_per_page_p95": 30,
+      "scope_note": "10.5 pt Song is the evidenced mainland scientific baseline; 15.5 pt leading is a readability choice for dense mathematical prose, not a universal CJK rule."
+    }
+  },
   "editable_sources": {
     "driver": {
       "path": "logic/work/locale/zh/open-logic-complete.tex",
-      "bytes": 2452,
-      "sha256": "E47166E4D834F3B09C018A2DBB8EA828303DAD5EB5BC7BC8FE7741F7D9F7277C"
+      "bytes": 2937,
+      "sha256": "8536AFDCBB1C1EA9F0EA085605440CA62B4149DEBD4320C4858B4F8C75232F12",
+      "change": "Set normalsize to 10.5 pt / 15.5 pt and headheight to 16 pt."
+    },
+    "license": {
+      "path": "logic/work/LICENSE.md",
+      "bytes": 17226,
+      "sha256": "642FD124813B65191B2C9A1D5E6EC13899831EB2CF4024CDB74755C8EF779AEF",
+      "byte_equal_to_upstream": true,
+      "change": "Restored one accidentally contaminated phrase to the exact upstream CC BY 4.0 legal text."
     },
     "locale": {
       "path": "logic/work/locale/zh/open-logic-locale.sty",
@@ -47,14 +90,15 @@
   "build": {
     "engine": "MiKTeX XeLaTeX 26.5",
     "final_incremental_pass_exit": 0,
-    "pages": 873,
-    "clean_recipe": [
+    "pages": 1013,
+    "working_directory": "logic/work/locale/zh",
+    "recipe": [
       "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex",
       "bibtex <build>/open-logic-complete",
       "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex",
+      "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex",
       "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -output-directory=<build> open-logic-complete.tex"
     ],
-    "working_directory": "logic/work/locale/zh",
     "log_counts": {
       "latex_errors": 0,
       "emergency_stops": 0,
@@ -66,10 +110,13 @@
       "missing_character_warnings": 0,
       "rerun_requests": 0,
       "multiply_defined_labels": 0,
-      "overfull_hboxes": 64,
-      "underfull_hboxes": 17,
-      "maximum_overfull_points": 63.604,
-      "overfull_boxes_above_25_points": 6
+      "headheight_warnings": 0,
+      "overfull_hboxes": 82,
+      "overfull_vboxes": 0,
+      "underfull_hboxes": 30,
+      "underfull_vboxes": 29,
+      "maximum_overfull_points": 83.83478,
+      "overfull_boxes_above_25_points": 9
     },
     "bibtex_warnings": [
       "missing publisher in Berkeley1734",
@@ -81,92 +128,46 @@
     ]
   },
   "artifacts": {
-    "pdf": {
-      "path": "logic/build/zh/complete-1/open-logic-complete.pdf",
-      "bytes": 3919880,
-      "sha256": "CEDE048997A9061E8F64EBBE82D49C8BAF8B631B9A13E1CA98B5F85C4ABF9878"
-    },
-    "log": {
-      "path": "logic/build/zh/complete-1/open-logic-complete.log",
-      "bytes": 1088798,
-      "sha256": "BBC8EBB788AF0218E52DE2248DA3B9D9B1E34E73321FEAA669629571DE6EFFED"
-    },
-    "aux": {
-      "bytes": 961674,
-      "sha256": "C7738A5A04B92CE1CFA1D0FEC31AA93A592B7D710FEAF586A8E142C3AD16DE9F"
-    },
-    "bbl": {
-      "bytes": 28387,
-      "sha256": "E0E5C2FEF8B98890CC22D88ADE91D062364C804381328FE3964AC93D41668CFA"
-    },
-    "blg": {
-      "bytes": 1548,
-      "sha256": "6520AD3687129915A9F0F7297B68FE2AFB9DE77987976C4104BDBC6B431E4ADF"
-    },
-    "fls": {
-      "bytes": 411044,
-      "sha256": "83AC54EB133D91472C236633101CE95D864D3755F209998291960FC51EB3DB69"
-    },
-    "out": {
-      "bytes": 78192,
-      "sha256": "0C391FD4DCB7AD6FBD3952A4ADB8686C25FFE1687875562973F5956C4B94D9C7"
-    },
-    "prb": {
-      "bytes": 50,
-      "sha256": "585E6B3E453D29EF43B6481679296811117570A81FB8854EF5A41B4A4338B0E9"
-    },
-    "thm": {
-      "bytes": 169282,
-      "sha256": "3CFB1E910DE0B4D67A4CD6064599DB890357BD2F9E9740697E4029C98E437EEF"
-    },
-    "toc": {
-      "bytes": 65064,
-      "sha256": "6F0FC717C8F2F012F6A1E14C2AAE8CCD7BB0FAE4326456642A8FFFB048404258"
-    }
+    "pdf": {"path": "logic/build/zh/reflow-105/open-logic-complete.pdf", "bytes": 4057893, "sha256": "9406F5AB54082A49767FF7B945AF4B053303D9551AB04D5A254FE616275F0DBC"},
+    "log": {"bytes": 1101872, "sha256": "5E512E7BF6B18DCF9661571262EFD96C5E2A4BEACFFD85E4243F360BB6A57426"},
+    "aux": {"bytes": 961920, "sha256": "F63C1F5559D92B343A3B5D75BFADE61DC98FECB8EBAE8B6D66767F4F8ADFE897"},
+    "bbl": {"bytes": 28387, "sha256": "E0E5C2FEF8B98890CC22D88ADE91D062364C804381328FE3964AC93D41668CFA"},
+    "blg": {"bytes": 1548, "sha256": "6520AD3687129915A9F0F7297B68FE2AFB9DE77987976C4104BDBC6B431E4ADF"},
+    "fls": {"bytes": 415837, "sha256": "D5A007B3AF3AA0E4493572B7B33C9A3380E84DB99FAE1619AE079F6B4EA7988D"},
+    "out": {"bytes": 78192, "sha256": "0C391FD4DCB7AD6FBD3952A4ADB8686C25FFE1687875562973F5956C4B94D9C7"},
+    "prb": {"bytes": 50, "sha256": "585E6B3E453D29EF43B6481679296811117570A81FB8854EF5A41B4A4338B0E9"},
+    "thm": {"bytes": 169333, "sha256": "9E454B345695C78E8FBD742EDF70386840C0C358A1434FC9BDD8746D1EC4B1AE"},
+    "toc": {"bytes": 65083, "sha256": "AE0C55D7036E8CC64C6AED9526BA6A9CC6281F761B872C167D4EDB495D2760C6"}
   },
   "extraction": {
     "method": "MiKTeX pdftotext -layout -enc UTF-8",
-    "temporary_text_bytes": 2162384,
-    "temporary_text_sha256": "B2A3B31FD82AC6ED9B5ABA2D71FE6D8B71CF8CE664BD00A5DD78B435781C1C13",
-    "cjk_characters": 361275,
+    "temporary_text_bytes": 2172512,
+    "temporary_text_sha256": "82AC3F09EE4CA08657AF5C9391E569299F5F408DBA3E83E591C0F1CE28C8E8DA",
+    "cjk_characters": 362955,
     "replacement_characters": 0,
     "double_question_mark_pairs": 0,
-    "required_identity_strings_present": [
-      "大陆简体中文",
-      "zh-Hans-CN",
-      "目录",
-      "参考文献",
-      "9620cc73f9c8"
-    ]
+    "required_identity_strings_present": ["大陆简体中文", "zh-Hans-CN", "目录", "参考文献", "9620cc73f9c8"]
   },
   "fonts_and_accessibility": {
-    "font_rows": 40,
-    "embedded_rows": 40,
-    "subset_rows": 37,
-    "tounicode_rows": 33,
+    "font_rows": 38,
+    "embedded_rows": 38,
+    "subset_rows": 35,
+    "tounicode_rows": 31,
     "rows_without_tounicode": 7,
     "tagged_pdf": false,
-    "adverse_evidence": "The visible edition is sound at producer QA scope, but the PDF has no document tagging and seven mathematical or Type 3 font rows lack ToUnicode. Formula copy/search/extraction and screen-reader structure are therefore not certified. This is retained as an upstream toolchain candidate, not treated as a Chinese prose defect."
+    "adverse_evidence": "The visible edition is sound at producer QA scope, but the PDF has no document tagging and seven mathematical or Type 3 font rows lack ToUnicode. Formula copy/search/extraction and screen-reader structure are therefore not certified."
   },
   "visual_qa": {
     "method": "Poppler rasterization followed by producer visual inspection",
-    "pages_inspected": [1, 52, 461, 462, 463, 464, 530, 531, 532, 535, 536, 537, 867, 873],
-    "severe_overfull_pages": [461, 463, 530, 531, 532, 536],
-    "result": "No observed clipping, overlap, missing glyph, broken formula, footer collision, or unreadable content. The six large overfull warnings remain visually contained inside the physical page. Chinese title, chapter order, running headings, bibliography heading, page numbers, and mainland commit footer were checked."
-  },
-  "ledgers": {
-    "changes_rows": 733,
-    "changes_sha256": "7D986C4DBB82FFDE0550BF9EC6A9D22E3630DEA70C488CDF42AB44F57F643248",
-    "terminology_rows": 532,
-    "terminology_sha256": "B66646D85806B168818F8189F0865F4EF2A82E5CC6E1C4B1315D38DC2F1993F8",
-    "cjk_register_rows": 107,
-    "cjk_register_sha256": "C8A391C4E1D279366F5FC7F53D6687F0B09F335CB362E26B22D81752B8846399",
-    "upstream_candidate_rows": 4,
-    "upstream_candidates_sha256": "D5582C893714D9180076EF788B1F83A668EFBD53C4AA5A0F610DE84BE3C41C49",
-    "json_parse_errors": 0
+    "physical_pages_inspected": [1, 27, 539, 621, 853, 1013],
+    "widest_content_page": 621,
+    "widest_text_x_points": 590.97,
+    "page_width_points": 612,
+    "result": "No observed clipping, overlap, missing glyph, broken formula, footer collision, or unreadable content. The widest formula-bearing pages remain inside the physical MediaBox. Title page, contents, dense arithmetization, lambda-calculus prose, diagrams, bibliography, page numbers, and mainland commit footer were checked."
   },
   "release_disposition": {
     "producer_packet_ready": true,
+    "supersedes_release_id": "ZH-OLP-PUB-0001",
     "independent_chinese_check": "pending",
     "independent_rendered_page_check": "pending",
     "upstream_issue_posted": false,
