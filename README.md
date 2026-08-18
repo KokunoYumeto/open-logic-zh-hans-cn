@@ -9,6 +9,8 @@ Open Logic Project — Complete Mainland Simplified-Chinese Edition (`zh-Hans-CN
 - 阅读器：873 页、可检索的 US Letter PDF
 - 来源：Open Logic Project 提交 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`
 - 许可：CC BY 4.0
+- Zenodo 版本 DOI：[10.5281/zenodo.21987818](https://doi.org/10.5281/zenodo.21987818)
+- Zenodo 概念 DOI：[10.5281/zenodo.21987817](https://doi.org/10.5281/zenodo.21987817)
 
 这是 Open Logic Project 锁定来源树的完整大陆简体中文翻译。上游完整构建选择 642 个内容单元；另外 80 个已翻译的草稿、替代或未由完整构建选择的单元仍保存在可编辑源包中，未被遗漏或冒充为已渲染页面。
 
