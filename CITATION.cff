@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "请按下列元数据引用这个完整大陆简体中文版本。"
+title: "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版"
+type: book
+authors:
+  - name: "Open Logic Project"
+version: "2026-08-18 — 完整大陆简体中文译本，722/722"
+date-released: 2026-08-18
+license: CC-BY-4.0
+repository-code: "https://github.com/KokunoYumeto/open-logic-zh-hans-cn"
+abstract: >-
+  Open Logic Project 锁定来源树全部 722 个来源对应内容 TeX 单元的
+  大陆简体中文（zh-Hans-CN）完整翻译，含 873 页可检索阅读器。
+keywords:
+  - 简体中文
+  - zh-Hans-CN
+  - Open Logic Project
+  - mathematical logic
+  - proof theory
+  - open textbook
+references:
+  - type: software
+    title: "Open Logic Project source authority"
+    repository-code: "https://github.com/OpenLogicProject/OpenLogic"
+    version: "commit 9620cc73f9c8e0ad003c514a5d3748f29611c4c0"
