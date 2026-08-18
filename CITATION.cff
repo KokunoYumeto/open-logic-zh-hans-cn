@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "引用本译本时，请同时注明 Open Logic Project 原作、锁定提交和本版本 DOI。"
 title: "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版（zh-Hans-CN，722/722）"
 type: book
-version: "2026-08-18-reflow-10.5pt"
+version: "2026-08-18-centered-reflow"
 date-released: 2026-08-18
 authors:
   - name: "Open Logic Project"
@@ -17,5 +17,6 @@ url: "https://doi.org/10.5281/zenodo.21987817"
 license: CC-BY-4.0
 abstract: >-
   Open Logic Project 锁定提交 9620cc73f9c8e0ad003c514a5d3748f29611c4c0
-  全部 722 个内容 TeX 单元的大陆简体中文完整翻译；本版本采用五号宋体
-  10.5 pt / 15.5 pt 重排。AI 生产，尚未经人工中文审校。
+  全部 722 个内容 TeX 单元的大陆简体中文完整翻译；本版本保留五号宋体
+  10.5 pt / 15.5 pt，并采用居中的 491 pt × 682 pt 宽版心重排。
+  AI 生产，尚未经人工中文审校。
