@@ -1,5 +1,7 @@
 # 开放逻辑项目：《开放逻辑文本》完整大陆简体中文版
 
+> 本版收录于[开放逻辑翻译总目录](https://github.com/KokunoYumeto/OpenLogic-translations)；总目录分别说明译文源文件覆盖度与单册阅读器覆盖度。
+
 Open Logic Project — Complete Mainland Simplified-Chinese Edition (`zh-Hans-CN`)
 
 ## 直接阅读
@@ -17,7 +19,7 @@ Open Logic Project — Complete Mainland Simplified-Chinese Edition (`zh-Hans-CN
 
 上一版虽已把首版实测约 9.96 pt / 12.6 pt 的正文改为五号宋体基准 10.5 pt / 15.5 pt，却仍沿用 memoir 的窄版心：正文只占约 340 pt，并按单双页围绕过大的装订偏移交替。此次修订保留字号和行距，把正文改排为居中的 491 pt × 682 pt 版心，完整行约容纳 46–47 个五号汉字；页数由 1,013 页降为 736 页，没有删节。依据、尺寸、精确改动和 QA 收据见证据包 `qa.json`。
 
-原作与作者：Open Logic Project。中文翻译与排版：AI typesetting & translation，由 OpenAI 5.6 Sol（Ultra mode）在 Floris 指导下完成。本版尚未经人工中文审校，不声称是同行评审版、批判版、Open Logic Project 官方中文版、无障碍认证版或 PDF/UA 版，也不表示原作者或相关机构认可。
+原作与作者：Open Logic Project。中文翻译与排版：AI typesetting & translation，由 OpenAI 5.6 Sol（Ultra mode）在项目编辑指导下完成。本版尚未经人工中文审校，不声称是同行评审版、批判版、Open Logic Project 官方中文版、无障碍认证版或 PDF/UA 版，也不表示原作者或相关机构认可。
 
 ## 文件
 
