@@ -1,38 +1,40 @@
-# 《开放逻辑文本》大陆简体中文版：80 单元补充读本
+# 《开放逻辑文本》完整大陆简体中文版（722/722 单元合订读本）
 
-其他语言版本和共同翻译规范见 [Open Logic translations hub](https://github.com/KokunoYumeto/OpenLogic-translations)。
+Open Logic Project — Complete Mainland Simplified-Chinese Edition (`zh-Hans-CN`)
 
-本补充读本将原先只随可编辑源包提供的 80 个中文内容单元排成可检索的 123 页 PDF，与原有 736 页主读本配套使用。主读本选择 642 个来源单元；两册合计覆盖冻结清单中的全部 722 个来源单元。单元是源文件，不是页数，其中包括章节组织文件。
+## 直接阅读
 
-补充内容包括一阶逻辑的可推导性与极大一致集、可表示性、直觉主义与多值逻辑、λ 演算、非标准算术、正规模态逻辑，以及大篇幅的相继式演算、切割消去、自然演绎、正规化和命题即类型材料。也收录二阶逻辑、归纳定义及集合论的替代材料。原作者标明的草稿、实验性和未完成状态均保留；本册不是对原作者未写成内容的虚构补写。
+- [单卷 PDF：859 页，722/722 个来源单元](https://github.com/KokunoYumeto/open-logic-zh-hans-cn/releases/download/ZH-OLP-PUB-0005/OpenLogic_zh-Hans-CN_Standalone722.pdf)
+- [Zenodo 概念 DOI：始终指向最新版](https://doi.org/10.5281/zenodo.21987817)
+- [GitHub 项目与可编辑来源](https://github.com/KokunoYumeto/open-logic-zh-hans-cn)
 
-## 阅读与覆盖
+这是 Open Logic Project《开放逻辑文本》的大陆简体中文（`zh-Hans-CN`）学术翻译版。内容涵盖集合、关系与函数、命题逻辑和一阶逻辑、证明系统、模型论、可计算性与不完备性、模态逻辑、证明论、相继式演算、切割消去、自然演绎、正规化、命题即类型及其他专题。
 
-- [主读本 PDF（736 页，642 单元）](https://zenodo.org/records/22001949/files/OpenLogic_zh-Hans-CN_Complete.pdf)
-- [补充读本 PDF（123 页，80 单元）](https://github.com/KokunoYumeto/open-logic-zh-hans-cn/releases/download/ZH-OLP-PUB-0004/OpenLogic_zh-Hans-CN_Supplement80.pdf)
-- [Zenodo 版本集合](https://doi.org/10.5281/zenodo.21987817)
-- [GitHub 项目](https://github.com/KokunoYumeto/open-logic-zh-hans-cn)
+冻结来源为 Open Logic Project 提交 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0` 的全部 722 个内容 TeX 单元。此前公开交付把 642 个常规驱动单元排为主读本，把其余 80 个替代、草稿或实验性单元排为补充读本；译文来源已经是 722/722，但没有一份同时包含两部分的单卷阅读器。本版将两册无删节合订为一份 859 页 PDF：第 1–736 页为主读本，第 737–859 页为补充读本，因此阅读器覆盖也达到 722/722。
 
-这次增补不覆盖原主读本或旧版文件。补充册保留 80 个单元自身的文字、标题、说明和公式；已在主读本出现的重复导入不再重复排印。所有 31 道显式习题均在相关正文后排印。已有完整证明予以保留，不因习题选项而隐藏。指向主读本的三处引用链接到确切版本的页面。
+## 阅读版式与导航
 
-## 来源、许可与改动
+主读本沿用已完成的中文重排：正文为宋体五号基准（10.5 pt），行距 15.5 pt，版心居中为 491 pt × 682 pt，左右边距均为 61.43 pt。补充读本采用相同的 10.5 pt 宋体和 15.5 pt 行距及居中页边距。该配置按大陆数学和科学出版中常见的五号正文尺度处理，避免早期版本正文过小、版心过窄和单双页横向漂移。
 
-原作：Open Logic Project，来源提交 `9620cc73f9c8e0ad003c514a5d3748f29611c4c0`。许可为 Creative Commons Attribution 4.0（CC BY 4.0）；包内保留原许可。译文为大陆取向简体中文（zh-Hans-CN），并非繁体中文、本地化新加坡版本或并排英文版本。
+合订过程不重排或改写已经冻结的页面内容。机械验证确认 859 页的内容流逐页与两份输入 PDF 完全一致；全部页面均为 US Letter（612 × 792 pt）。书签面板分为“主读本（642 个核心单元）”与“补充读本（80 个附加单元）”两大入口。为避免两册共有的 200 个内部目标名称造成错跳，补充册的 207 个内部链接在合订时改写为明确页目标；最终 3,136 个链接全部保留、均可解析且没有越出页面边界。
 
-中文翻译与排版为 AI 生成，未经人工中文审校，不声称官方认可、同行评审、语言认证、PDF/UA 或数学无误。继承的英文与中文源文件保持不变，构建所需的精确修改仅应用于独立的补充册文件；`repairs.json` 逐项记录，包括来源记号错误、引用绑定和六处会隐藏证明的中文选择标签偏移。
+## 来源、许可与版本边界
 
-正文使用宋体 10.5 TeX pt，行距 15.5 pt，左右页边距均为 0.85 英寸。自动检查确认 80 个单元各载入一次、31 道显式习题均出现、无未定义引用、缺字、重复标签、版面溢出或越界链接。生产者已检查全册缩略图及数学密集页的放大图。遗留数学字体仍有字号替代警告；PDF 未取得无障碍认证，数学公式的复制与辅助阅读能力不作保证。
+原作与作者：Open Logic Project。许可：Creative Commons Attribution 4.0（CC BY 4.0）。本译本保留来源、署名、原作者标注的草稿或未完成状态以及版本改动说明；它不是 Open Logic Project 官方中文版，也不表示原作者或相关机构认可。
 
-## 重建
+中文翻译与排版为 AI 生成，尚未经人工中文审校，不声称同行评审、数学或语言认证。英文只保留于原书书名、专名、文献条目、代码、公式和稳定标识，不构成并排英文版。
 
-解压 `OpenLogic_zh-Hans-CN_Supplement80_Source.zip`。包中只携带此补充册实际需要的项目文件、80 个英文来源、80 个继承中文来源、覆盖清单及补充册脚本，不含系统字体、缓存、Git 元数据或凭据。
+## 文件与重建
 
-需要 Python 3、PyMuPDF、XeLaTeX 及相应 TeX 包，并安装宋体、微软雅黑、Times New Roman、Arial、Courier New。进入解压后的 `supplement` 目录运行：
+- `OpenLogic_zh-Hans-CN_Standalone722.pdf`：本次首要阅读文件，859 页，722/722 单元。
+- `OpenLogic_zh-Hans-CN_Source.zip` 与 `OpenLogic_zh-Hans-CN_Supplement80_Source.zip`：主读本和补充读本的可编辑来源。
+- `OpenLogic_zh-Hans-CN_Standalone722_Evidence.zip`：合订脚本、结构检查、视觉抽样图和发布 QA 收据。
+- `OpenLogic_zh-Hans-CN_Evidence_Sanitized.zip` 与 `OpenLogic_zh-Hans-CN_Supplement80_Evidence.zip`：两部分的生产证据；前者是从不可改写的历史资产派生的隐私清理副本，旧版本字节仍保留在旧记录中。
+- `README_Standalone722.md`：本说明。
+- `Standalone722_SHA256SUMS.txt`：本次发布资产的字节数与 SHA-256。
 
-```powershell
-python prepare.py
-pwsh -NoProfile -File build.ps1 -Stage full -MutexTimeoutMs 30000
-python check.py
-```
+既有主读本、补充读本、完整可编辑来源包及其证据包继续保存在同一 Zenodo 版本谱系和较早的 GitHub 发行版中，不因本次合订而删除或覆盖。重建本合订 PDF 需要 Python 3 与 `pypdf 6.10.0`；在包含两份哈希锁定输入 PDF 的原目录结构中运行 `build_combined_reader.py`。构建脚本会拒绝输入身份或页数变化，并在写出后重新打开结果。
 
-`build.ps1` 在 Windows 上使用全机共享的 TeX 互斥锁，并限制每个编译进程为 60 秒。无法取得锁时不启动编译器；不要平行启动第二份编译。没有引用命令时跳过 BibTeX。结果为 `supplement/build/reader.pdf`。不同 TeX 或字体版本可能改变换行和 PDF 字节；具体生成物由发布的 SHA-256 确定。
+## 已知限制
+
+两份输入 PDF 均未标记结构标签，数学字体中仍有 8 行缺少 ToUnicode；因此本版不声称符合 PDF/UA，也不保证全部公式的复制、检索、抽取或屏幕阅读器语义。中文正文所用字体均嵌入且带 ToUnicode。该限制来自既有排版工具链，不影响本次证明的页面覆盖、视觉呈现或内部链接完整性。
