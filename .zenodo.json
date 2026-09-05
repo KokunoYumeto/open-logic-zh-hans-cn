@@ -1,8 +1,8 @@
 {
-  "title": "开放逻辑项目：《开放逻辑文本》完整大陆简体中文版（zh-Hans-CN，722/722）",
+  "title": "《开放逻辑文本》完整大陆简体中文版（722/722 单元合订读本）",
   "upload_type": "publication",
   "publication_type": "book",
-  "description": "Open Logic Project 锁定来源树全部 722 个内容 TeX 单元的大陆简体中文（zh-Hans-CN）完整翻译。此更新保留大陆科学出版五号宋体基准 10.5 pt / 15.5 pt，将继承的窄而偏移的英文书籍版心改为居中的 491 pt × 682 pt 宽版心，形成 736 页可检索 PDF；同时提供完整可编辑来源、术语与变更记录及 QA/provenance。AI 生产，尚未经人工中文审校，不声称官方认可或 PDF/UA 认证。",
+  "description": "Open Logic Project 锁定提交 9620cc73f9c8e0ad003c514a5d3748f29611c4c0 全部 722 个内容 TeX 单元的大陆简体中文（zh-Hans-CN）学术翻译版。本版本把 642 单元主读本与 80 单元补充读本无删节合订为一份 859 页 PDF，使来源覆盖和单卷阅读覆盖均达到 722/722。正文采用 10.5 pt 宋体、15.5 pt 行距和居中版心；提供可编辑来源、精确哈希、结构与视觉 QA 证据。AI 生成，尚未经人工中文审校，不声称官方认可、同行评审或 PDF/UA。",
   "creators": [
     {"name": "Open Logic Project"}
   ],
@@ -12,7 +12,7 @@
   "access_right": "open",
   "license": "cc-by-4.0",
   "language": "zho",
-  "version": "2026-08-18 — 居中宽版心重排完整译本，722/722",
+  "version": "2026-09-05 — 722/722 单卷阅读版",
   "keywords": ["开放逻辑项目", "简体中文", "zh-Hans-CN", "数理逻辑", "证明论", "开放教材", "CC BY 4.0"],
   "related_identifiers": [
     {"identifier": "https://github.com/OpenLogicProject/OpenLogic/tree/9620cc73f9c8e0ad003c514a5d3748f29611c4c0", "relation": "isDerivedFrom", "scheme": "url"},
