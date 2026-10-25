@@ -1,14 +1,11 @@
 {
-  "schema": "openlogic-zh-hans-cn-centered-reflow-qa/v3",
-  "frozen_at": "2026-08-18T21:25:42+02:00",
-  "release_id": "ZH-OLP-PUB-0003",
-  "supersedes_release_id": "ZH-OLP-PUB-0002",
+  "schema": "openlogic-zh-hans-cn-release-qa/v4",
+  "release_id": "ZH-OLP-PUB-0006",
+  "date": "2026-10-25",
   "identity": {
-    "title_zh": "《开放逻辑文本》完整版本",
     "source_title": "The Open Logic Text",
     "locale": "zh-Hans-CN",
-    "register": "mainland-oriented Simplified Chinese",
-    "translation_status": "AI-produced; human Chinese review not performed",
+    "translation_status": "AI-produced translation, English term glosses and typesetting; human Chinese review not performed",
     "certification": "not claimed",
     "endorsement": "no upstream-author or institutional endorsement claimed"
   },
@@ -16,183 +13,155 @@
     "repository": "https://github.com/OpenLogicProject/OpenLogic",
     "commit": "9620cc73f9c8e0ad003c514a5d3748f29611c4c0",
     "license": "CC BY 4.0",
-    "manifest": "logic/UNITS.jsonl",
-    "manifest_bytes": 312352,
-    "manifest_sha256": "3DCABE67BC468766A259EB320E9A63EBB8DF2AFB2AF201B3351F231149611CC7"
+    "units": 722,
+    "main_reader_units": 642,
+    "supplement_units": 80
   },
-  "coverage": {
-    "manifest_units": 722,
-    "translated_units": 722,
-    "pending_units": 0,
-    "rendered_in_complete_pdf": 642,
-    "translated_but_not_selected_by_upstream_complete_driver": 80,
-    "source_files_missing": 0,
-    "source_hash_mismatches": 0,
-    "target_files_missing": 0,
-    "target_hash_mismatches": 0,
-    "placeholder_hits": 0
-  },
-  "correction": {
-    "reason": "The prior 10.5 pt release retained memoir's narrow asymmetric book typeblock: about 340 pt of a 612 pt physical page, alternating around an oversized binding offset. It was visibly off-center in single-page/screen reading and did not use the sheet.",
-    "previous_reader": {
-      "release_id": "ZH-OLP-PUB-0002",
-      "pdf_sha256": "9406F5AB54082A49767FF7B945AF4B053303D9551AB04D5A254FE616275F0DBC",
-      "pages": 1013,
-      "measured_content_width_points_approx": 340,
-      "sample_even_left_margin_points": 108.6,
-      "sample_even_right_margin_points": 154.9,
-      "sample_odd_left_margin_points": 162.4,
-      "sample_odd_right_margin_points": 102.7
-    },
-    "current_reader": {
-      "pdf_sha256": "D1A7B35482973E6AEAF7FACFEB54E27870B407F069685B5309CD8BA04BF97F35",
-      "pages": 736,
-      "declared_body_points": 10.5,
-      "font": "SimSun",
-      "declared_leading_points": 15.5,
-      "memoir_text_width_points": 491,
-      "memoir_text_height_points": 682,
-      "memoir_spine_margin_points": 61.42993,
-      "memoir_edge_margin_points": 61.42993,
-      "memoir_upper_margin_points": 57.81621,
-      "memoir_lower_margin_points": 55.15378,
-      "approximate_five_size_han_capacity_per_full_line": "46–47",
-      "title_alignment": "centered",
-      "intent": "screen-first Chinese scientific reader; a separate sewn-binding variant may use a characterized gutter"
-    },
-    "typography_evidence": {
-      "body_baseline": "Mainland scientific publishing guidance supports Song five-size body text (10.5 pt); this release retains the already evidenced 10.5 pt SimSun and 15.5 pt leading and corrects page architecture only.",
-      "sources": [
-        "https://academic.hep.com.cn/CN/column11/column23257.shtml",
-        "https://www.sciengine.com/authorCenter/guide/Manuscript/650a3e0dc8604525a7d65f2aae61420d",
-        "https://sfs.nankai.edu.cn/2025/0402/c7262a566018/pagem.htm"
-      ],
-      "cross_cjk_rule": "Share the measurement protocol with Japanese and Korean work, not these Chinese numeric values or font choices."
-    }
-  },
-  "editable_sources": {
-    "driver": {
-      "path": "logic/work/locale/zh/open-logic-complete.tex",
-      "bytes": 3730,
-      "sha256": "41789D70169283CC8656573BFEB4FAC5B33F4FD434A93F819CC1CF21691B4627",
-      "change": "Centered 491 pt by 682 pt typeblock, equal side margins, centered title, and discretionary breaks for one long technical token."
-    },
-    "omega_consistency_unit": {
-      "path": "logic/work/locale/zh/content/incompleteness/theories-computability/oconsis-ext-of-q-undec.tex",
-      "bytes": 1887,
-      "sha256": "1429B15F91A45C17F8578E11946FDE0A021E735F08C82C71AC72B5E877006DDE",
-      "change": "Added invisible legal breakpoints between the unchanged displayed formula-list items."
-    },
-    "lambda_computable_unit": {
-      "path": "logic/work/locale/zh/content/lambda-calculus/introduction/lambda-computable.tex",
-      "bytes": 1554,
-      "sha256": "DD12E26FDD1AE1367AFA1CF2CA66E921D65F21177BA89514EF5F70182817514C",
-      "change": "Added invisible legal breakpoints between the unchanged primitive-recursion function names."
-    },
-    "locale": {
-      "path": "logic/work/locale/zh/open-logic-locale.sty",
-      "bytes": 4809,
-      "sha256": "EBA844E2397108A218CACA2DA9CCE51C1898706B9984C20974A09967179AA3D6"
-    },
-    "license": {
-      "path": "logic/work/LICENSE.md",
-      "bytes": 17226,
-      "sha256": "642FD124813B65191B2C9A1D5E6EC13899831EB2CF4024CDB74755C8EF779AEF",
-      "byte_equal_to_upstream": true
-    }
-  },
-  "build": {
-    "engine": "MiKTeX XeLaTeX 26.5",
-    "bibliography_engine": "BibTeX 0.99e",
-    "final_pass_exit": 0,
-    "pages": 736,
-    "working_directory": "logic/work/locale/zh",
-    "recipe": [
-      "xelatex -interaction=nonstopmode -halt-on-error -file-line-error -recorder -output-directory=<build> open-logic-complete.tex",
-      "bibtex <build>/open-logic-complete",
-      "xelatex ...",
-      "xelatex ...",
-      "xelatex ..."
+  "pdf": {
+    "name": "OpenLogic_zh-Hans-CN_Standalone722.pdf",
+    "bytes": 6062950,
+    "sha256": "C464A9F8BBEA55D10D913DBBB4FF7FDD3D5A600B00236D9923EC7B50899496E0",
+    "pages": 868,
+    "main_reader_pages": [
+      1,
+      744
     ],
-    "log_counts": {
-      "fatal_errors": 0,
-      "undefined_reference_occurrences": 0,
-      "undefined_citation_occurrences": 0,
-      "missing_character_warnings": 0,
-      "rerun_requests": 0,
+    "supplement_pages": [
+      745,
+      868
+    ],
+    "tagged": false,
+    "font_entries": 67,
+    "font_entries_without_tounicode": 5
+  },
+  "main_reader": {
+    "pdf_sha256": "7110ACF6CD9FB3508D37F12842711546D286C18962CD2B20DACDF046AC2B595B",
+    "pages": 744,
+    "build_passes": [
+      {
+        "stage": "tex",
+        "pass": 1,
+        "seconds": 54,
+        "exit_code": 0
+      },
+      {
+        "stage": "bib",
+        "pass": 2,
+        "seconds": 0,
+        "exit_code": 1
+      },
+      {
+        "stage": "tex",
+        "pass": 3,
+        "seconds": 57,
+        "exit_code": 0
+      },
+      {
+        "stage": "tex",
+        "pass": 4,
+        "seconds": 57,
+        "exit_code": 0
+      },
+      {
+        "stage": "tex",
+        "pass": 5,
+        "seconds": 57,
+        "exit_code": 0
+      }
+    ],
+    "log": {
+      "errors": 0,
+      "undefined_references": 0,
+      "undefined_citations": 0,
+      "missing_characters": 0,
       "multiply_defined_labels": 0,
-      "headheight_warnings": 0,
-      "overfull_hboxes": 43,
-      "overfull_vboxes": 0,
-      "maximum_overfull_points": 8.01256,
-      "overfull_boxes_above_20_points": 0
+      "rerun_requests": 0,
+      "overfull_hboxes": 44,
+      "overfull_hbox_max_pt": 8.01256
+    }
+  },
+  "supplement": {
+    "pdf_sha256": "36625773FD455D33B03D2B922060CD71CE51C47082DFF1435B49D1F9DCD7A2C8",
+    "pages": 124,
+    "log": {
+      "errors": 0,
+      "undefined_references": 0,
+      "undefined_citations": 0,
+      "missing_characters": 0,
+      "multiply_defined_labels": 0,
+      "rerun_requests": 0,
+      "overfull_hboxes": 0,
+      "overfull_hbox_max_pt": 0.0
     },
-    "resolved_layout_outliers": [
-      {"previous_points": 29.66919, "locus": "oconsis-ext-of-q-undec.tex:24–28"},
-      {"previous_points": 91.33478, "locus": "lambda-computable.tex:25–32"},
-      {"previous_points": 24.48747, "locus": "absinf.tex:58–71"}
+    "check_py": {
+      "mechanical_pass": true,
+      "unit_markers": 80,
+      "problems": 31,
+      "links": 216,
+      "bad_links": []
+    }
+  },
+  "assembly": {
+    "input_pages": [
+      744,
+      124
     ],
-    "bibtex_warnings": [
-      "missing publisher in Berkeley1734",
-      "cannot use both author and editor fields in Frege1953",
-      "cannot use both author and editor fields in EwaldSieg2013",
-      "missing publisher in Hume1740",
-      "empty journal in OConnorRobertson:RN",
-      "empty journal in Weston2003"
+    "output_pages": 868,
+    "page_sizes": {
+      "612.0x792.0": 868
+    },
+    "all_content_streams_byte_equal": true,
+    "content_stream_mismatch_pages": [],
+    "input_annotation_counts": [
+      2929,
+      216
+    ],
+    "output_annotation_count": 3145,
+    "converted_supplement_internal_links": 207,
+    "shared_input_destination_names": 201,
+    "links": {
+      "counts": {
+        "annotation:/Link": 3145,
+        "link:uri": 80,
+        "link:named": 2858,
+        "link:direct": 207
+      },
+      "unresolved_named": [],
+      "unresolved_direct": [],
+      "out_of_bounds_rectangles": [],
+      "direct_targets_all_in_supplement": true
+    },
+    "page_mode": "/UseOutlines",
+    "outline_parent_titles": [
+      "主读本（642 个核心单元）",
+      "补充读本（80 个附加单元）"
+    ],
+    "outline_parent_pages_1_based": [
+      1,
+      745
     ]
   },
-  "artifacts": {
-    "pdf": {"path": "logic/build/zh/reflow-centered/open-logic-complete.pdf", "bytes": 3718371, "sha256": "D1A7B35482973E6AEAF7FACFEB54E27870B407F069685B5309CD8BA04BF97F35"},
-    "log": {"bytes": 1078736, "sha256": "1270395C185EC0F6FCFF7B90931EE7AC72C916B4E5CE502B21DDB8213A3B943C"},
-    "aux": {"bytes": 961561, "sha256": "6055889F90934422F684C8D5DE2A7BB9CC08EA3B5C984B325629B2A96520662D"},
-    "bbl": {"bytes": 28387, "sha256": "E0E5C2FEF8B98890CC22D88ADE91D062364C804381328FE3964AC93D41668CFA"},
-    "blg": {"bytes": 1548, "sha256": "6520AD3687129915A9F0F7297B68FE2AFB9DE77987976C4104BDBC6B431E4ADF"},
-    "fls": {"bytes": 417582, "sha256": "F8ED6D4CEB812DC84E86EF30E47A96F98E9842E380533D78C32F455770A22C45"},
-    "out": {"bytes": 78192, "sha256": "0C391FD4DCB7AD6FBD3952A4ADB8686C25FFE1687875562973F5956C4B94D9C7"},
-    "prb": {"bytes": 50, "sha256": "585E6B3E453D29EF43B6481679296811117570A81FB8854EF5A41B4A4338B0E9"},
-    "thm": {"bytes": 169259, "sha256": "889330FD29557A4D0DE246395D006179FEA7D898AD43782D97F419F3BF773107"},
-    "toc": {"bytes": 65044, "sha256": "B1FB147B0DE41C1B4C3947651BEF0932892E4942D1C46600725081D1D0D57536"}
+  "glosses": {
+    "placements": 923,
+    "found_exactly_once": 923,
+    "not_found": [],
+    "found_more_than_once": [],
+    "with_earlier_bare_occurrence": 234
   },
-  "extraction": {
-    "method": "MiKTeX pdftotext -layout -enc UTF-8",
-    "temporary_text_bytes": 2242305,
-    "temporary_text_sha256": "644872359B208B46111DF98FD8AE5B97EA099E845C54FBC9BF26FDD8DA9EBBC4",
-    "cjk_characters_including_repeated_headers": 359706,
-    "replacement_characters": 0,
-    "double_question_mark_pairs": 0,
-    "measured_han_per_extracted_line_with_at_least_five_han": {"median": 21, "p95": 42, "maximum": 55},
-    "required_identity_strings_present": ["大陆简体中文", "zh-Hans-CN", "目录", "参考文献", "9620cc73f9c8"]
-  },
-  "pdf_integrity": {
-    "media_box_points": [0, 0, 612, 792],
-    "uniform_media_boxes": true,
-    "empty_content_pages": 0,
-    "annotations": 2920,
-    "annotations_outside_media_box": 0,
-    "named_destinations": 8279,
-    "encrypted": false
-  },
-  "fonts_and_accessibility": {
-    "font_rows": 38,
-    "embedded_rows": 38,
-    "subset_rows": 35,
-    "tounicode_rows": 31,
-    "rows_without_tounicode": 7,
-    "tagged_pdf": false,
-    "adverse_evidence": "Visible producer QA passed, but the PDF remains untagged and seven mathematical or Type 3 font rows lack ToUnicode. Formula extraction and screen-reader structure are not certified."
-  },
-  "visual_qa": {
-    "method": "Poppler rasterization followed by producer inspection",
-    "physical_pages_inspected_final": [1, 2, 20, 200, 350, 412, 450, 500, 656, 735, 736],
-    "content_types": ["centered title", "introductory prose", "contents", "proof trees", "Turing-machine diagrams", "chapter opener", "long unbreakable technical tokens", "bibliography", "running heads and footers"],
-    "result": "No observed clipping, overlap, missing glyph, broken formula, footer collision or unreadable page. The three first-build long-token overflows were corrected and re-inspected."
-  },
-  "release_disposition": {
-    "producer_packet_ready": true,
-    "independent_chinese_check": "pending",
-    "independent_rendered_page_check": "pending",
-    "certification": "not claimed",
-    "upstream_issue_posted": false,
-    "upstream_issue_permission": "Ask Floris immediately before opening or posting the consolidated issue; this gate does not apply to publication of the Chinese edition."
+  "visual_check": {
+    "dpi": 72,
+    "pages": [
+      "1-2",
+      "25-26",
+      "259-260",
+      "281-282",
+      "380-381",
+      "403-404",
+      "449",
+      "744-745",
+      "779-780",
+      "867-868"
+    ],
+    "result": "no clipping, overlap, missing glyphs or lines outside the text block seen"
   }
 }

@@ -1,21 +1,38 @@
 # 可重复构建
 
-本版本由两份已经冻结并分别验证的阅读器无损合订：
+单卷阅读器由两份分别构建的 PDF 无损合订：
 
-- `OpenLogic_zh-Hans-CN_Complete.pdf`：736 页，642 个常规驱动单元，SHA-256 `D1A7B35482973E6AEAF7FACFEB54E27870B407F069685B5309CD8BA04BF97F35`。
-- `OpenLogic_zh-Hans-CN_Supplement80.pdf`：123 页，其余 80 个单元，SHA-256 `DECED432302472F951E0016230310DEB3513CC8FBF4D269559554672B025610C`。
+- 主读本：744 页，642 个单元，SHA-256 `7110ACF6CD9FB3508D37F12842711546D286C18962CD2B20DACDF046AC2B595B`。
+- 补充读本：124 页，80 个单元，SHA-256 `36625773FD455D33B03D2B922060CD71CE51C47082DFF1435B49D1F9DCD7A2C8`。
 
-从发行版下载并解压两个可编辑来源包，可分别重建两份输入 PDF。主读本使用 XeLaTeX 与 BibTeX；补充读本来源包中的 `build.ps1` 使用全机 TeX 互斥锁，并给出完整的依赖、命令和检查说明。
+所用工具：MiKTeX 26.5（XeTeX 4.18、BibTeX 0.99e），Python 3.13 与 `pypdf 6.12.2`。
 
-合订步骤只需 Python 3 与 `pypdf 6.10.0`：保持证据包中的目录关系，把两份哈希锁定 PDF 放在脚本声明的位置，然后运行：
+## 主读本
 
-```powershell
-python build_combined_reader.py
-python verify_combined_reader.py
+解压 `OpenLogic_zh-Hans-CN_Source.zip`，在 `locale/zh` 目录中依次运行：
+
+```
+xelatex -interaction=nonstopmode -halt-on-error -file-line-error -recorder -output-directory=BUILD open-logic-complete.tex
+bibtex BUILD/open-logic-complete
+xelatex ...（同上，共三遍）
 ```
 
-合订脚本拒绝输入哈希或页数变化。它逐页保留渲染内容，把补充册 207 个内部命名链接改为明确页目标，以免两册共有的 200 个目标名称引起错跳，并导入两份书签树。确定性重放两次得到完全相同的 5,975,161 字节 PDF，SHA-256 为 `1EAFF4694F18893E49AFD020F6F4FF1ED5B90B29755A24B011E53B759B27AF19`。
+`BUILD` 为输出目录，须预先建好其子目录 `content`。BibTeX 报告 `bib/open-logic.bib` 的六条警告，并因找不到 `content/open-logic-about.aux`（该单元没有文献引用）报告一条错误，以退出码 1 结束；最终日志无错误、未定义引用或未定义文献。
 
-验证结果：859 页均为 612 × 792 pt；859 个页面内容流与输入逐页一致；3,136 个链接全部保留，无未解析目标或越界矩形；书签父入口分别指向第 1 页和第 737 页。144 dpi 视觉抽样检查了第 1、101、736、737、738、799 和 859 页。详细结果及抽样图在 `OpenLogic_zh-Hans-CN_Standalone722_Evidence.zip`。
+## 补充读本
 
-PDF 未标记结构标签，且 68 行字体中有 8 行遗留数学字体缺少 ToUnicode，因此不声称 PDF/UA 或完整公式抽取能力。中文正文字体均嵌入并带 ToUnicode。
+解压 `OpenLogic_zh-Hans-CN_Supplement80_Source.zip`，在 `supplement/` 中运行 `build.ps1 -Stage full`（XeLaTeX、BibTeX（无引用时跳过）、再两遍 XeLaTeX），然后运行 `python check.py`。`check.py` 核对 80 个单元标记、31 个习题、216 个链接、来源哈希、缺字和日志警告。
+
+## 合订
+
+合订脚本 `assemble_combined.py` 在 `OpenLogic_zh-Hans-CN_Standalone722_Evidence.zip` 的 `combined/` 中：
+
+```
+python assemble_combined.py MAIN.pdf SUPPLEMENT.pdf OUTPUT.pdf RECEIPT.json
+```
+
+脚本逐页保留两份输入的内容流，把补充读本的 207 个内部命名链接改为明确页目标（两册有 201 个相同的目标名称），并导入两份书签树。写出后重新打开结果并检查：868 页均为 612 × 792 pt；868 个页面内容流与输入逐字节一致；3,145 个链接（80 个外部链接、2,858 个命名目标链接、207 个页目标链接）中，内部链接的目标均存在，所有链接矩形都在页面以内；书签父入口在第 1 页和第 745 页。输出 PDF 为 6,062,950 字节，SHA-256 `C464A9F8BBEA55D10D913DBBB4FF7FDD3D5A600B00236D9923EC7B50899496E0`。
+
+## 英文术语括注检查
+
+`combined/verify_pdf_glosses.py` 读取 `pdftotext -raw` 抽取的合订本文本，对每处括注检查“中文术语（英文”在全书中出现的次数。结果见 `combined/gloss-check.json`：923 处均恰好出现一次。
